@@ -9,3 +9,4 @@
 5. Translating JSON into array using json_decode()
 6. Show organized array using implode()
 7. Insert, Store and Show Photos.
+8. Dynamic & Clickable Status
