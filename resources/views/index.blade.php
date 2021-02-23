@@ -17,6 +17,12 @@
 
 	<div class="wrap-table">
         <a id="create_btn" href="#" class="btn btn-success mb-2">Create</a>
+		<form action="">
+
+			<div class="form-group">
+				<input class="form-control" type="text" name="" id="">
+			</div>
+		</form>
 		<div class="card shadow">
 			<div class="card-body">
 				<h2>All Customers</h2>

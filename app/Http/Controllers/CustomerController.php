@@ -19,11 +19,21 @@ class CustomerController extends Controller
      */
     public function store(Request $request){
 
+        $photo = '';
+
         // Photo Processing
         if($request -> hasFile('photo')){
             $file = $request -> file('photo');
             $photo = md5(time(). rand()) . '.' . $file -> getClientOriginalExtension();
             $file -> move(public_path('photos'), $photo);
+        }else{
+            
+            // Default Photo Storing by gender
+            if($request -> gender == 'Male'){
+                $photo = 'male_avatar.png';
+            }elseif($request -> gender == 'Female'){
+                $photo = 'female_avatar.png';
+            }
         }
 
         // Array Processing
